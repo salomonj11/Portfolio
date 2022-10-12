@@ -1,5 +1,6 @@
 import type { NextPage } from 'next';
 import Head from 'next/head';
+import Header from '../components/Header';
 import styles from '../styles/Home.module.css';
 
 const Home: NextPage = () => {
@@ -8,7 +9,19 @@ const Home: NextPage = () => {
       <Head>
         <title>My Portfolio</title>
       </Head>
-      <h1>Hello!</h1>
+
+      <Header />
+      {/* Hero */}
+
+      {/* About */}
+
+      {/* Experience */}
+
+      {/* Skills */}
+
+      {/* Projects */}
+
+      {/* Contact Me */}
     </div>
   );
 };
