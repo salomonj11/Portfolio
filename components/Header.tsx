@@ -30,10 +30,15 @@ export default function Header({}: Props) {
           bgColor="transparent"
         />
         <SocialIcon
-          url="https://github.com/salomonj11"
+          url="https://www.linkedin.com/in/jesus-salomon/"
           fgColor="gray"
           bgColor="transparent"
         />
+        {/* <SocialIcon
+          url="https://gist.github.com/salomonj11/21f1b16ef5e802403bdeaae8a78d49e8"
+          fgColor="gray"
+          bgColor="transparent"
+        /> */}
       </motion.div>
 
       <motion.div
