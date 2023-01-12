@@ -26,7 +26,7 @@ function About({}: Props) {
           duration: 1.2,
         }}
         whileInView={{ x: 0, opacity: 1 }}
-        src="https://media-exp1.licdn.com/dms/image/C4D03AQF5AqO399Dnrw/profile-displayphoto-shrink_400_400/0/1619737148295?e=1671062400&v=beta&t=9SQvZx-zLDpH9qi_blABKIof9kyPWtGhiLc7ckME9hQ"
+        src="https://salomonjesus.com/pics_and_memes/Thats%20me.jpg"
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95"
       />
 
@@ -39,18 +39,26 @@ function About({}: Props) {
           background
         </h4>
         <p className="text-base">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Natus, blanditiis. Suscipit laudantium iure quaerat dolores
-          asperiores! Consequuntur repellendus iure fugit iusto vero
-          laudantium nisi, eum aspernatur temporibus corrupti ullam
-          odio! Lorem, ipsum dolor sit amet consectetur adipisicing
-          elit. Hic architecto sequi dolores voluptatem quia veritatis
-          rem doloribus non, similique fuga, soluta delectus eveniet
-          ut quis molestiae. Sequi illum sit eligendi. Lorem ipsum
-          dolor sit, amet consectetur adipisicing elit. Ex, dolore
-          suscipit. Repellat accusantium dolores nulla totam quis esse
-          modi aliquid id sed magni voluptate odit tempore, expedita,
-          cumque similique molestiae!
+          I graduated from Loyola University Chicago in 2021 with a
+          degree in biology with an emphasis in Cellular & Molecular
+          Neuroscience. While at Loyola I learned computational
+          methods to understand neural processing in the brain. This
+          led me to my discovery of programming and eventually falling
+          in love with it. I am well-versed in technology and writing
+          code to create systems that are reliable and user-friendly.
+          I am a confident communicator, strategic thinker, and
+          innovative creator to develop software that is customized to
+          meet a company’s organizational needs, highlight their core
+          competencies, and further their success. I am also a quick
+          learner and always looking to learn new things. Main
+          technologies I use are:
+          <strong>
+            {' '}
+            Node.js, Express, React, PostgreSQL, EJS, Mongoose,
+            MongoDB.
+          </strong>
+          My curriculum vitae (CV) can be found{' '}
+          <a href="JesusSalomonResume.pdf">here</a>.
         </p>
       </div>
     </motion.div>
