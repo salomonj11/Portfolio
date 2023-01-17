@@ -39,26 +39,23 @@ function About({}: Props) {
           background
         </h4>
         <p className="text-base">
-          I graduated from Loyola University Chicago in 2021 with a
-          degree in biology with an emphasis in Cellular & Molecular
-          Neuroscience. While at Loyola I learned computational
-          methods to understand neural processing in the brain. This
-          led me to my discovery of programming and eventually falling
-          in love with it. I am well-versed in technology and writing
-          code to create systems that are reliable and user-friendly.
-          I am a confident communicator, strategic thinker, and
-          innovative creator to develop software that is customized to
-          meet a company’s organizational needs, highlight their core
-          competencies, and further their success. I am also a quick
-          learner and always looking to learn new things. Main
-          technologies I use are:
-          <strong>
-            {' '}
-            Node.js, Express, React, PostgreSQL, EJS, Mongoose,
-            MongoDB.
-          </strong>
-          My curriculum vitae (CV) can be found{' '}
-          <a href="JesusSalomonResume.pdf">here</a>.
+          I&apos;m Jesus. 🤠 I graduated from Loyola University
+          Chicago in 2021 with a degree in biology with an emphasis in
+          Cellular & Molecular Neuroscience. While at Loyola I learned
+          computational methods to understand neural processing in the
+          brain. This led me to my discovery of programming and
+          eventually falling in love with it. I am well-versed in
+          technology and writing code to create systems that are
+          reliable and user-friendly. I am a confident communicator,
+          strategic thinker, and innovative creator to develop
+          software that is customized to meet a company&apos;s
+          organizational needs, highlight their core competencies, and
+          further their success ✨. I am also a quick learner and
+          always looking to learn new things. My curriculum vitae (CV)
+          can be found{' '}
+          <span className="underline decoration-[#F7AB0A]/50">
+            <a href="JesusSalomonResume.pdf">here</a>.
+          </span>{' '}
         </p>
       </div>
     </motion.div>
