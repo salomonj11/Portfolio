@@ -24,26 +24,32 @@ function Skills({}: Props) {
         <Skill
           imgSrc="https://www.logo.wine/a/logo/PostgreSQL/PostgreSQL-Logo.wine.svg"
           progress={69}
+          directionLeft={true}
         />
         <Skill
           imgSrc="https://img.icons8.com/plasticine/512/react.png"
           progress={67}
+          directionLeft={true}
         />
         <Skill
           imgSrc="https://img.icons8.com/color/512/mongodb.png"
           progress={52}
+          directionLeft={true}
         />
         <Skill
           imgSrc="https://www.freepnglogos.com/uploads/javascript-png/javascript-logo-transparent-logo-javascript-images-3.png"
           progress={81}
+          directionLeft={true}
         />
         <Skill
           imgSrc="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_96102ac6497377cd53da621075fe828e/sanity.png"
           progress={34}
+          directionLeft={true}
         />
         <Skill
           imgSrc="https://img.icons8.com/fluency/512/node-js.png"
           progress={76}
+          directionLeft={true}
         />
         <Skill
           imgSrc="https://img.icons8.com/nolan/512/express-js.png"

@@ -4,7 +4,41 @@ import { motion } from 'framer-motion';
 type Props = {};
 
 function Projects({}: Props) {
-  const projects = [1, 2, 3, 4, 5];
+  const projects = [
+    {
+      id: 1,
+      title: 'Rate My Campsite',
+      imageSrc: 'https://i.imgur.com/wybAkeH.png',
+      description: 'This is project 1',
+      technologies: [
+        'Node.JS',
+        'EJS',
+        'Express',
+        'MongoDB + Mongoose',
+      ],
+      liveDemoLink: 'https://example.com/project1',
+      codeLink: 'https://github.com/yourusername/project1',
+    },
+    {
+      id: 2,
+      title: 'Project 2',
+      imageSrc: 'https://i.imgur.com/ABC123.png',
+      description: 'This is project 2',
+      technologies: ['React', 'TypeScript', 'Firebase'],
+      liveDemoLink: 'https://example.com/project2',
+      codeLink: 'https://github.com/yourusername/project2',
+    },
+    {
+      id: 3,
+      title: 'Project 3',
+      imageSrc: 'https://i.imgur.com/XYZ456.png',
+      description: 'This is project 3',
+      technologies: ['Vue.js', 'Node.js', 'MongoDB'],
+      liveDemoLink: 'https://example.com/project3',
+      codeLink: 'https://github.com/yourusername/project3',
+    },
+  ];
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -20,7 +54,7 @@ function Projects({}: Props) {
         {projects.map((project, i) => (
           <div
             className="w-screen flex-shrink-0 snap-center flex flex-col space-y-5 items-center justify-center p-20 md:p-44 h-screen"
-            key={project}
+            key={project.id}
           >
             <motion.img
               initial={{ y: -300, opacity: 0 }}
@@ -28,7 +62,7 @@ function Projects({}: Props) {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               className="mb-0"
-              src="https://i.imgur.com/wybAkeH.png"
+              src={project.imageSrc}
               alt=""
             />
 
@@ -37,31 +71,32 @@ function Projects({}: Props) {
                 <span className="underline decoration-[#f7ab0a]/50">
                   Case Study {i + 1} of {projects.length}:
                 </span>{' '}
-                Rate My Campsite
+                {project.title}
               </h4>
 
+              <div className="flex items-center space-x-2 justify-center">
+                {project.technologies.map((tech, i) => (
+                  <img
+                    key={i}
+                    className="h-10 w-10"
+                    src={`https://img.icons8.com/fluency/512/${tech.toLowerCase()}.png`}
+                    alt={`${tech} logo`}
+                  />
+                ))}
+              </div>
+
               <p className="text-lg text-center md:text-left">
-                This is a fullstack CRUD application. Users can
-                create, delete and review campgrounds. Main
-                technologies used were{' '}
+                {project.description} The main technologies used were{' '}
                 <span className="underline decoration-[#f7ab0a]/50">
-                  Node.JS, EJS, Express, MongoDB + Mongoose.
+                  {project.technologies.join(', ')}.
                 </span>{' '}
-                Passport is used for authentication, authorization and
-                cryptography. Joi is used for data validation. The
-                live demo can be found{' '}
+                The live demo can be found{' '}
                 <span className="underline decoration-[#F7AB0A]/50">
-                  <a href="https://rate-my-campsite.herokuapp.com/">
-                    here
-                  </a>
-                  .
+                  <a href={project.liveDemoLink}>here</a>.
                 </span>{' '}
                 The code can be found{' '}
                 <span className="underline decoration-[#F7AB0A]/50">
-                  <a href="https://github.com/salomonj11/rate-my-campsite">
-                    here
-                  </a>
-                  .
+                  <a href={project.codeLink}>here</a>.
                 </span>{' '}
               </p>
             </div>
