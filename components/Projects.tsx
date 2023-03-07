@@ -9,15 +9,25 @@ function Projects({}: Props) {
       id: 1,
       title: 'Rate My Campsite',
       imageSrc: 'https://i.imgur.com/wybAkeH.png',
-      description: 'This is project 1',
+      description:
+        'This is a fullstack CRUD application. Users can create, delete and review campgrounds. Passport is used for authentication, authorization and cryptography. Joi is used for data validation.',
       technologies: [
-        'Node.JS',
-        'EJS',
-        'Express',
-        'MongoDB + Mongoose',
+        {
+          name: 'Node.js',
+          imageUrl: 'https://img.icons8.com/fluency/512/node-js.png',
+        },
+        {
+          name: 'Express',
+          imageUrl: 'https://img.icons8.com/nolan/512/express-js.png',
+        },
+        {
+          name: 'MongoDB + Mongoose',
+          imageUrl: 'https://img.icons8.com/color/512/mongodb.png',
+        },
       ],
-      liveDemoLink: 'https://example.com/project1',
-      codeLink: 'https://github.com/yourusername/project1',
+
+      liveDemoLink: 'https://rate-my-campsite.herokuapp.com/',
+      codeLink: 'https://github.com/salomonj11/rate-my-campsite',
     },
     {
       id: 2,
@@ -60,7 +70,7 @@ function Projects({}: Props) {
               initial={{ y: -300, opacity: 0 }}
               transition={{ duration: 1.2 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
+              viewport={{ once: false }}
               className="mb-0"
               src={project.imageSrc}
               alt=""
@@ -75,11 +85,17 @@ function Projects({}: Props) {
               </h4>
 
               <div className="flex items-center space-x-2 justify-center">
-                {project.technologies.map((tech, i) => (
+                {(
+                  project.technologies as {
+                    name: string;
+                    imageUrl: string;
+                  }[]
+                ).map((tech, i) => (
+                  // eslint-disable-next-line @next/next/no-img-element
                   <img
                     key={i}
                     className="h-10 w-10"
-                    src={`https://img.icons8.com/fluency/512/${tech.toLowerCase()}.png`}
+                    src={tech.imageUrl}
                     alt={`${tech} logo`}
                   />
                 ))}
@@ -88,7 +104,15 @@ function Projects({}: Props) {
               <p className="text-lg text-center md:text-left">
                 {project.description} The main technologies used were{' '}
                 <span className="underline decoration-[#f7ab0a]/50">
-                  {project.technologies.join(', ')}.
+                  {(
+                    project.technologies as {
+                      name: string;
+                      imageUrl: string;
+                    }[]
+                  )
+                    .map((tech) => tech.name)
+                    .join(', ')}
+                  .
                 </span>{' '}
                 The live demo can be found{' '}
                 <span className="underline decoration-[#F7AB0A]/50">
