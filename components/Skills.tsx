@@ -28,7 +28,7 @@ function Skills({}: Props) {
         />
         <Skill
           imgSrc="https://img.icons8.com/plasticine/512/react.png"
-          progress={67}
+          progress={77}
           directionLeft={true}
         />
         <Skill

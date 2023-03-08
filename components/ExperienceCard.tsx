@@ -14,7 +14,7 @@ function ExperienceCard({}: Props) {
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false }}
-        className="w-32 h-32 xl:w-[200px] xl:h-[200px] rounded-md"
+        className="w-32 h-32 xl:w-[235px] xl:h-[185px] rounded-md"
         src="https://i.imgur.com/e6KGYJI.png"
         alt=""
       />

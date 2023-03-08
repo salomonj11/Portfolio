@@ -31,21 +31,19 @@ function Projects({}: Props) {
     },
     {
       id: 2,
-      title: 'Project 2',
-      imageSrc: 'https://i.imgur.com/ABC123.png',
-      description: 'This is project 2',
-      technologies: ['React', 'TypeScript', 'Firebase'],
-      liveDemoLink: 'https://example.com/project2',
-      codeLink: 'https://github.com/yourusername/project2',
-    },
-    {
-      id: 3,
-      title: 'Project 3',
-      imageSrc: 'https://i.imgur.com/XYZ456.png',
-      description: 'This is project 3',
-      technologies: ['Vue.js', 'Node.js', 'MongoDB'],
-      liveDemoLink: 'https://example.com/project3',
-      codeLink: 'https://github.com/yourusername/project3',
+      title: 'Not Ikea',
+      imageSrc: 'https://i.imgur.com/OW4l2gC.png',
+      description:
+        'This is a fullstack E-commerce project. Users are able to login & logout via auth0. Dummy payments can be made via Stripe checkout.',
+      technologies: [
+        {
+          name: 'React',
+          imageUrl: 'https://img.icons8.com/plasticine/512/react.png',
+        },
+      ],
+
+      liveDemoLink: 'https://not-ikea.netlify.app/',
+      codeLink: 'https://github.com/salomonj11/Not-Ikea',
     },
   ];
 
