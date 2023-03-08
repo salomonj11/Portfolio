@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import ExperienceCard from '../components/ExperienceCard';
+import ExperienceCard from './ExperienceCard';
 
 type Props = {};
 
@@ -17,10 +17,7 @@ function Experience({}: Props) {
       <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Experience
       </h3>
-      <div>
-        <ExperienceCard />
-        <ExperienceCard />
-        <ExperienceCard />
+      <div className="w-full p-10 flex justify-center">
         <ExperienceCard />
       </div>
     </motion.div>
