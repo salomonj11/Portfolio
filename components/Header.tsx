@@ -22,7 +22,7 @@ export default function Header({}: Props) {
         transition={{
           duration: 1.5,
         }}
-        className="flex flex-row items-center"
+        className="flex flex-row items-center space-x-4"
       >
         {/* Social Icons */}
         <SocialIcon
@@ -35,11 +35,27 @@ export default function Header({}: Props) {
           fgColor="gray"
           bgColor="transparent"
         />
-        {/* <SocialIcon
-          url="https://gist.github.com/salomonj11/21f1b16ef5e802403bdeaae8a78d49e8"
-          fgColor="gray"
-          bgColor="transparent"
-        /> */}
+        <a
+          href="https://salomonjesus.com/JesusSalomonResume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="flex items-center justify-center w-12 h-12 rounded-full text-gray-500"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            className="w-6 h-6"
+          >
+            <path d="M19 21H5a2 2 0 01-2-2V5a2 2 0 012-2h9l5 5v11a2 2 0 01-2 2z"></path>
+            <polyline points="17 21 17 13 7 13 7 21"></polyline>
+            <polyline points="7 3 7 8 15 8"></polyline>
+          </svg>
+        </a>
       </motion.div>
 
       <Link href="#contact">

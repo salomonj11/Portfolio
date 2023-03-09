@@ -13,14 +13,19 @@
     "@fortawesome/free-solid-svg-icons": "^6.3.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
     "@heroicons/react": "^2.0.13",
+    "bowser": "^2.11.0",
     "framer-motion": "^7.5.3",
+    "lodash": "^4.17.21",
     "next": "12.3.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-hook-form": "^7.42.1",
     "react-router-dom": "^6.4.2",
     "react-simple-typewriter": "^4.0.5",
-    "react-social-icons": "^5.15.0"
+    "react-social-icons": "^5.15.0",
+    "simplebar": "^6.2.1",
+    "simplebar-react": "^3.2.1",
+    "smooth-scrollbar": "^8.8.1"
   },
   "devDependencies": {
     "@types/node": "18.8.5",
