@@ -71,16 +71,16 @@ function ExperienceCard({}: Props) {
             and scalability for present and future engineering
             efforts.
           </li>
-          <li>
+          {/* <li>
             Examine existing systems for flaws and create solutions
             that improve service uptime and time-to-resolve through
             monitoring and automated remediation.
-          </li>
-          <li>
+          </li> */}
+          {/* <li>
             Plan and execute full software development lifecycle for
             each assigned project, adhering to company standards and
             expectations.
-          </li>
+          </li> */}
         </ul>
       </div>
     </article>
