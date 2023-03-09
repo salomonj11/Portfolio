@@ -14,8 +14,8 @@ function ExperienceCard({}: Props) {
         transition={{ duration: 1.2 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: false }}
-        className="w-32 h-32 xl:w-[235px] xl:h-[185px] rounded-md"
-        src="https://i.imgur.com/e6KGYJI.png"
+        className="w-32 h-32 xl:w-[140px] xl:h-[140px] rounded-md"
+        src="https://i.imgur.com/FcTfipq.png"
         alt=""
       />
 
@@ -70,6 +70,16 @@ function ExperienceCard({}: Props) {
             engineers, and ensuring code consistency, maintainability,
             and scalability for present and future engineering
             efforts.
+          </li>
+          <li>
+            Examine existing systems for flaws and create solutions
+            that improve service uptime and time-to-resolve through
+            monitoring and automated remediation.
+          </li>
+          <li>
+            Plan and execute full software development lifecycle for
+            each assigned project, adhering to company standards and
+            expectations.
           </li>
         </ul>
       </div>
