@@ -20,7 +20,7 @@ function Skills({}: Props) {
         Hover over a skill for current proficiency
       </h3>
 
-      <div className="grid grid-cols-4 gap-5 pt-20">
+      <div className="grid grid-cols-4 gap-5 pt-20 ">
         <Skill
           imgSrc="https://www.logo.wine/a/logo/PostgreSQL/PostgreSQL-Logo.wine.svg"
           progress={69}

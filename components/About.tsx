@@ -41,7 +41,7 @@ function About({}: Props) {
           duration: 1.2,
         }}
         whileInView={{ x: 0, opacity: 1 }}
-        src="https://salomonjesus.com/pics_and_memes/Thats%20me.jpg"
+        src="https://i.imgur.com/Jk8NsJo.jpg"
         className="-mb-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-95 mobile-about-image"
       />
 

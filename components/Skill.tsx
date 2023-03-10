@@ -8,10 +8,18 @@ type Props = {
 };
 
 function Skill({ directionLeft, imgSrc, progress }: Props) {
+  let x: number;
+
+  if (typeof window !== 'undefined' && window.innerWidth <= 640) {
+    x = directionLeft ? -80 : 80;
+  } else {
+    x = directionLeft ? -200 : 200;
+  }
+
   return (
     <div className="group relative flex cursor-pointer">
       <motion.img
-        initial={{ x: directionLeft ? -200 : 200, opacity: 0 }}
+        initial={{ x, opacity: 0 }}
         transition={{ duration: 1 }}
         whileInView={{ opacity: 1, x: 0 }}
         src={imgSrc}
