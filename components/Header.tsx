@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
@@ -6,7 +6,16 @@ import Link from 'next/link';
 type Props = {};
 
 export default function Header({}: Props) {
-  if (typeof window !== 'undefined' && window.innerWidth <= 640) {
+  const [shouldRender, setShouldRender] = useState(false);
+
+  useEffect(() => {
+    setShouldRender(true);
+  }, []);
+
+  if (
+    !shouldRender ||
+    (typeof window !== 'undefined' && window.innerWidth <= 640)
+  ) {
     return null;
   }
 
