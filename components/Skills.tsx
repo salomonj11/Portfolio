@@ -56,11 +56,11 @@ function Skills({}: Props) {
           progress={84}
         />
         <Skill
-          imgSrc="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_typescript_icon_130108.png"
+          imgSrc="https://i.imgur.com/Mrdpg3t.png"
           progress={38}
         />
         <Skill
-          imgSrc="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_tailwind_icon_130128.png"
+          imgSrc="https://i.imgur.com/nrfN7OQ.png"
           progress={46}
         />
         <Skill
