@@ -42,8 +42,8 @@ function Skills({}: Props) {
           directionLeft={true}
         />
         <Skill
-          imgSrc="https://images.g2crowd.com/uploads/product/image/social_landscape/social_landscape_96102ac6497377cd53da621075fe828e/sanity.png"
-          progress={34}
+          imgSrc="https://img.icons8.com/color/512/java-coffee-cup-logo.png"
+          progress={14}
           directionLeft={true}
         />
         <Skill
@@ -55,21 +55,24 @@ function Skills({}: Props) {
           imgSrc="https://img.icons8.com/nolan/512/express-js.png"
           progress={84}
         />
+        {/* Typescript */}
         <Skill
           imgSrc="https://i.imgur.com/Mrdpg3t.png"
           progress={38}
         />
+        {/* Tailwind CSS */}
         <Skill
           imgSrc="https://i.imgur.com/nrfN7OQ.png"
           progress={46}
         />
+        {/* Next Js */}
         <Skill
-          imgSrc="https://cdn.thenewstack.io/media/2021/06/7c546588-nextjs.png"
+          imgSrc="https://i.imgur.com/0HV5vlL.png"
           progress={37}
         />
         <Skill
-          imgSrc="https://img.icons8.com/external-tal-revivo-shadow-tal-revivo/512/external-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-logo-shadow-tal-revivo.png"
-          progress={86}
+          imgSrc="https://img.icons8.com/color/512/c-sharp-logo.png"
+          progress={14}
         />
         <Skill
           imgSrc="https://img.icons8.com/external-those-icons-lineal-color-those-icons/512/external-Git-social-media-those-icons-lineal-color-those-icons.png"
