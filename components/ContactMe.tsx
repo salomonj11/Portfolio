@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   PhoneIcon,
   MapPinIcon,
@@ -16,15 +16,34 @@ type Inputs = {
 type Props = {};
 
 function ContactMe({}: Props) {
+  const [windowHeight, setWindowHeight] = useState(0);
+
+  useEffect(() => {
+    function handleResize() {
+      setWindowHeight(window.innerHeight);
+    }
+
+    window.addEventListener('resize', handleResize);
+    handleResize();
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const shouldDisplayText = windowHeight > 900;
+
   const { register, handleSubmit } = useForm<Inputs>();
   const onSubmit: SubmitHandler<Inputs> = (formData) => {
     window.location.href = `mailto:salomonj1121@gmail.com?subject=${formData.subject}&body=${formData.message}`;
   };
   return (
     <div className="h-screen flex relative flex-col text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center">
-      <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl hidden md:block">
-        Contact
-      </h3>
+      {shouldDisplayText && (
+        <h3 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+          Contact
+        </h3>
+      )}
 
       <div className="flex flex-col space-y-10">
         <h4 className="text-3xl sm:text-4xl font-semibold text-center px-4 ml-4 sm:ml-0 mr-2 sm:mr-0">
